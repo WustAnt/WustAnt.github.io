@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>WustAnt</title>
+  
+  <subtitle>微笑，迎接崭新的一天</subtitle>
+  <link href="http://wustant.com/atom.xml" rel="self"/>
+  
+  <link href="http://wustant.com/"/>
+  <updated>2021-06-11T09:07:28.000Z</updated>
+  <id>http://wustant.com/</id>
+  
+  <author>
+    <name>WustAnt</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://wustant.com/2021/06/11/hello-world/"/>
+    <id>http://wustant.com/2021/06/11/hello-world/</id>
+    <published>2021-06-11T09:07:26.170Z</published>
+    <updated>2021-06-11T09:07:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://wustant.com/2021/02/27/Linux%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://wustant.com/2021/02/27/Linux%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-02-27T09:58:41.500Z</published>
+    <updated>2021-02-27T11:46:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux学习"><a href="#Linux学习" class="headerlink" title="Linux学习"></a>Linux学习</h1><h4 id="判断用户的参数"><a href="#判断用户的参数" class="headerlink" title="判断用户的参数"></a>判断用户的参数</h4><p>测试语句格式：<code>[条件表达式]</code><!--条件表达式两边均有一个空格，--></p><p>​        条件测试语法可以判断表达式是否成立，成立返回0，不成立返回其他随机数值</p><p>按测试对象可以划分4种：</p><ul><li><p>文件测试语句</p></li><li><p>逻辑测试语句</p></li><li><p>整数值比较语句</p></li><li><p>字符串比较语句</p><h5 id="文件测试语句"><a href="#文件测试语句" class="headerlink" title="文件测试语句"></a>文件测试语句</h5><table><thead><tr><th>运算符</th><th>作用</th></tr></thead><tbody><tr><td>-d</td><td>测试文件是否为目录类型</td></tr><tr><td>-e</td><td>测试文件是否存在</td></tr><tr><td>-f</td><td>测试是否为一般文件</td></tr><tr><td>-r</td><td>测试当前用户是否有权限读取</td></tr><tr><td>-w</td><td>测试当前用户是否有权限写入</td></tr><tr><td>-x</td><td>测试当前用户是否有权限执行</td></tr></tbody></table><p>测试文件/root 是否为目录类型，返回0</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@VM-12-5-centos <span class="built_in">test</span>]<span class="comment"># [ -d /root ]</span></span><br><span class="line">[root@VM-12-5-centos <span class="built_in">test</span>]<span class="comment"># echo $?</span></span><br><span class="line">0</span><br></pre></td></tr></table></figure><h5 id="逻辑测试语句"><a href="#逻辑测试语句" class="headerlink" title="逻辑测试语句"></a>逻辑测试语句</h5><table><thead><tr><th>逻辑语句</th><th>逻辑符号</th><th>作用</th></tr></thead><tbody><tr><td>与</td><td>&amp;&amp;</td><td>表示当前的命令执行成功后才会执行后面的命令</td></tr><tr><td>或</td><td>||</td><td>表示当前的命令执行失败后才会执行后面的命令</td></tr><tr><td>非</td><td>！</td><td>表示把条件测试中的判断结果取反</td></tr></tbody></table><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@VM-12-5-centos <span class="built_in">test</span>]<span class="comment"># [ -e /dev/cdrom ]&amp;&amp;echo &quot;Exit&quot;</span></span><br><span class="line">Exit</span><br></pre></td></tr></table></figure><h5 id="整数值比较语句"><a href="#整数值比较语句" class="headerlink" title="整数值比较语句"></a>整数值比较语句</h5><table><thead><tr><th>运算符</th><th>作用</th></tr></thead><tbody><tr><td>-eq</td><td>是否等于</td></tr><tr><td>-ne</td><td>是否不等于</td></tr><tr><td>-gt</td><td>是否大于</td></tr><tr><td>-lt</td><td>是否小于</td></tr><tr><td>-le</td><td>是否等于或小于</td></tr><tr><td>-ge</td><td>是否大于或等于</td></tr></tbody></table><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@VM-12-5-centos ~]# [ 10 -gt 10 ]</span><br><span class="line">[root@VM-12-5-centos ~]# echo $?</span><br><span class="line">1</span><br></pre></td></tr></table></figure><h5 id="字符串比较语句"><a href="#字符串比较语句" class="headerlink" title="字符串比较语句"></a>字符串比较语句</h5></li></ul><table><thead><tr><th>运算符</th><th>作用</th></tr></thead><tbody><tr><td>=</td><td>比较字符串内容是否相同</td></tr><tr><td>!=</td><td>比较字符串内容是否不同</td></tr><tr><td>-z</td><td>判断字符串内容是否为空</td></tr></tbody></table><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@VM-12-5-centos ~]<span class="comment"># [ -z $String ]</span></span><br><span class="line">[root@VM-12-5-centos ~]<span class="comment"># echo $?</span></span><br><span class="line">0</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Linux学习&quot;&gt;&lt;a href=&quot;#Linux学习&quot; class=&quot;headerlink&quot; title=&quot;Linux学习&quot;&gt;&lt;/a&gt;Linux学习&lt;/h1&gt;&lt;h4 id=&quot;判断用户的参数&quot;&gt;&lt;a href=&quot;#判断用户的参数&quot; class=&quot;headerlink</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
